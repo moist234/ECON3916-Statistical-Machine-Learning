@@ -50,3 +50,7 @@ These tools allow me to move seamlessly from data cleaning and exploration to st
 - Clear interpretations of results from an economic perspective
 
 Thanks for visiting — I’m always learning, iterating, and improving.
+
+Netflix and other large-scale experimentation platforms have moved beyond the academic convention of p < 0.05 toward what practitioners call return-aware experimentation — where decision thresholds are calibrated to the business cost of each error type, not a universal statistical convention. A false positive on a low-stakes UI test carries a fundamentally different cost than one on a pricing algorithm or content ranking system, so the acceptable alpha level shifts accordingly. This reflects a broader principle I internalize in my own analytical work: decision thresholds are business parameters first, statistical conventions second. The p-value tells you the probability of your data under the null — it is the business context that tells you whether that probability is good enough to act on.
+
+
