@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 RMSE = 1.95
 FEATURES = ["MIN", "FGA", "FG_PCT", "FG3M", "REB", "AST", "STL", "BLK", "PLUS_MINUS"]
@@ -29,7 +30,7 @@ input_data = pd.DataFrame(
     columns=FEATURES,
 )
 
-model = joblib.load("model_small.pkl")
+model = joblib.load(os.path.join(os.path.dirname(__file__), "model_small.pkl"))
 prediction = float(model.predict(input_data)[0])
 
 low  = round(prediction - RMSE, 1)
