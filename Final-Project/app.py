@@ -29,7 +29,7 @@ input_data = pd.DataFrame(
     columns=FEATURES,
 )
 
-model = joblib.load("model.pkl")
+model = joblib.load("model_small.pkl")
 prediction = float(model.predict(input_data)[0])
 
 low  = round(prediction - RMSE, 1)
